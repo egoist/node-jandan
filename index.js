@@ -5,9 +5,7 @@ var jandan = module.exports = {}
 
 function api(type) {
   return function (opts) {
-    opts = opts || {}
-    var page = opts.page || 1
-    return fetch(baseURL(type, {page: page}))
+    return fetch(baseURL(type, opts))
       .then(function (data) {
         return data.json()
       })
@@ -15,7 +13,9 @@ function api(type) {
 }
 
 function baseURL(p, opts) {
-  return 'http://jandan.net/?oxwlxojflwblxbsapi=jandan.' + p + '&page=' + opts.page
+  opts = opts || {}
+  const page = opts.page || 1
+  return 'http://jandan.net/?oxwlxojflwblxbsapi=jandan.' + p + '&page=' + page
 }
 
 jandan.ooxx = api('get_ooxx_comments')
