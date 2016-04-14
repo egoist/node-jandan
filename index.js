@@ -14,7 +14,7 @@ function api(type) {
 
 function baseURL(p, opts) {
   opts = opts || {}
-  const page = opts.page || 1
+  var page = opts.page || 1
   return 'http://jandan.net/?oxwlxojflwblxbsapi=jandan.' + p + '&page=' + page
 }
 
