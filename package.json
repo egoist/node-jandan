@@ -1,0 +1,36 @@
+{
+  "name": "node-jandan",
+  "version": "0.0.0",
+  "description": "Jandan.net Node.js API",
+  "license": "MIT",
+  "repository": "egoist/node-jandan",
+  "author": {
+    "name": "EGOIST",
+    "email": "0x142857@gmail.com",
+    "url": "github.com/egoist"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "jandan"
+  ],
+  "devDependencies": {
+    "ava": "latest",
+    "xo": "latest"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
