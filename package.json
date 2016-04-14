@@ -1,6 +1,6 @@
 {
   "name": "node-jandan",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Jandan.net Node.js API",
   "license": "MIT",
   "repository": "egoist/node-jandan",
