@@ -11,11 +11,12 @@ $ npm install --save node-jandan
 ## Usage
 
 ```js
-import {ooxx, boring} from 'node-jandan'
+import {ooxx, boring, random} from 'node-jandan'
 
 (async function () {
   const ooxxPics = await ooxx({page: 2})
   const boringPics = await boring({page: 3})
+  const random = await random() // http:\/\/...\/xxx.jpg
 })()
 ```
 
